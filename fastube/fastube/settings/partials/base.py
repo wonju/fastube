@@ -166,5 +166,7 @@ LOGIN_SUCCESS_MESSAGE = "성공적으로 로그인이 되었습니다."
 LOGOUT_SUCCESS_MESSAGE = "성공적으로 로그아웃 되었습니다."
 
 AUTHENTICATION_BACKENDS = [
+    "social.backends.facebook.FacebookOAuth2",
+
     "django.contrib.auth.backends.ModelBackend",
 ]
