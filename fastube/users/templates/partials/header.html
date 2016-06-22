@@ -2,7 +2,10 @@
   <h1>Header</h1>
 
   <ul>
-    {% if request.user.is_authentocated %}
+    {% if request.user.is_authenticated %}
+      <li>
+        <a href="{% url "logout" %}">logout</a>
+      </li>
     {% else %}
       <li>
         <a href="{% url "login" %}">login</a>
