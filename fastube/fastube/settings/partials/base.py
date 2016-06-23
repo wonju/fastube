@@ -148,7 +148,7 @@ PIPELINE = {
         'fastube': {
             'source_filenames': (
               'css/application.css',
-              'css/partials/*',
+              'css/partials/*.css',
             ),
             'output_filename': 'css/fastube.css',
         }
